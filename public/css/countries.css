@@ -1,0 +1,20 @@
+body{
+    background-color: #151d0e;
+    text-align: center;
+}
+table{
+    width: 90%;
+    margin: auto;
+}
+
+tr:nth-child(even){
+    background-color: #fbf0db;
+}
+tr:nth-child(odd){
+    background-color: #d9fb99;
+}
+
+tr:hover{
+    background-color: rebeccapurple;
+    cursor: pointer;
+}

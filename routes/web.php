@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+include_once 'russian.php';
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/airports', 'App\Http\Controllers\AirportsController@listAirports');
+Route::get('/countries', 'App\Http\Controllers\CountriesController@listCountries');
+Route::get('/amazon/search', 'App\Http\Controllers\AmazonController@search');
+Route::get('/amazon/lookup', 'App\Http\Controllers\AmazonController@lookup');
